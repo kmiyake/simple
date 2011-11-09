@@ -22,8 +22,8 @@
           </article>
         <?php endwhile; ?>
         <div  class="nav-below">
-          <span class="nav-previous"><?php previous_posts_link('古い記事へ') ?></span>
-          <span class="nav-next"><?php next_posts_link('新しい記事へ') ?></span>
+          <span class="nav-previous"><?php next_posts_link('古い記事へ') ?></span>
+          <span class="nav-next"><?php previous_posts_link('新しい記事へ') ?></span>
         </div><!-- /.nav-below -->
       <?php else : ?>
         <h2>Not Found</h2>
