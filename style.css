@@ -124,7 +124,8 @@ div#wrapper {
   #wrapper > header p.blog_description {
     margin-left: 15px;
     }
-  #wrapper > header div.menu:after {
+  #wrapper > header div.menu:after,
+  #wrapper > header nav:after {
     content: ""; 
     clear: both;
     display: block; 
