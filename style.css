@@ -1,0 +1,226 @@
+/*   
+ *   Theme Name: Simple
+ *   Theme URI: 
+ *   Description: minimal design
+ *   Author: Kota Miyake
+ *   Author URI: http://www.miyapong.com/
+ *   Template: 
+ *   Version: 0.1
+ */
+
+/*
+ * 0.Reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family: 'Lucida Sans Unicode','Lucida Grande',Helvetica,Arial,sans-serif;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * 1.General
+ */
+body {
+  background-color: #F8F8F8;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.1em; font-weight: bold; }
+a {
+  color: #08C;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+pre, blockquote {
+  background-color: #F8F8F8;
+  border: 1px solid #EEE;
+  font-family: Georgia,serif;
+  font-style: italic;
+  margin: 5px 10px;
+  padding: 10px;
+  text-shadow: 0 1px 0 #E5E5E5;
+}
+pre { font-style: normal; }
+strong { font-weight: bold; }
+p { margin: 8px 0; }
+ol, ul {
+  padding: 10px 20px;
+}
+.clearfix {
+  clear: both;
+  display: block;
+}
+
+/***********************
+ *
+ * 2.Wrapper
+ *
+ ***********************/
+div#wrapper {
+  background-color: #FFF;
+  border: 1px solid #EEE;
+  margin: 15px auto;
+  padding: 20px 20px 5px;
+  width: 1080px;
+}
+
+/***********************
+ * 
+ * 3.Header
+ * 
+ ***********************/
+#wrapper > header {
+  margin: 15px 0;
+  }
+  #wrapper > header a.blog_title {
+    color: #666;
+    font-size: 1.8750em;
+    font-weight: bold;
+    }
+  #wrapper > header a.blog_title:hover {
+    color: #333;
+    }
+  #wrapper > header p.blog_description {
+    margin-left: 15px;
+    }
+  #wrapper > header div.menu:after {
+    content: ""; 
+    clear: both;
+    display: block; 
+    }
+  #wrapper > header div.menu ul li,
+  #wrapper > header nav ul li {
+    border-top: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    float: left;
+    }
+  #wrapper > header div.menu ul li:last-child,
+  #wrapper > header nav ul li:last-child {
+    border-right: 1px solid #EEE;
+    }
+    #wrapper > header div.menu ul li a,
+    #wrapper > header nav ul li a {
+      background-color: #F8F8F8;
+      display: block;
+      font-weight: bold;
+      padding: 10px 30px;
+      }
+    #wrapper > header div.menu ul li a:hover,
+    #wrapper > header nav ul li a:hover {
+      background-color: #08C;
+      color: #FFF;
+      text-decoration: none;
+      }
+
+/***********************
+ *
+ * 4.Contents
+ * 
+ ***********************/
+#contents {
+  float: left;
+  width: 700px;
+  }
+  #contents a.entry_title {
+    color: #333;
+    text-shadow: 1px 1px 2px #AAA;
+    }
+  #contents section.entry_info { 
+    color: #888;
+    font-size: 0.9em;
+    }
+  #contents section.entry_tags { 
+    color: #888;
+    font-size: 0.9em;
+    }
+    #contents section.entry_body h3 {
+      border-left: 6px solid #EEE;
+      margin-top: 20px;
+      padding-left: 8px;
+      }
+    #contents section.entry_body ol {
+      list-style-type: decimal;
+      margin-left: 15px;
+      }
+    #contents .nav-below {
+      text-align: center;
+      }
+    #contents img {
+      border: solid 3px #EEE;
+      margin: 10px 20px;
+      }
+      
+/*
+ * 5.Sidebar
+ */
+#side {
+  float: right;
+  width: 370px;
+  }
+  .widget-area header h3 {
+    background-color: #EEE;
+    border-left: 7px solid #333;
+    margin: 5px 0;
+    padding: 5px 10px;
+    }
+  .widget-area #calendar_wrap {
+    padding: 0 20px;
+    }
+  .widget-area .tagcloud {
+    padding: 0 20px;
+    }
+    #wp-calendar th, td {
+      text-align: center;
+      width: 30px;
+    }
+
+/*
+ * 6.Footer
+ */
+#wrapper > footer {
+  }
+  #wrapper > footer div.blog_footer {
+    text-align: center;
+    }
