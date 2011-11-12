@@ -7,6 +7,8 @@
       <?php if (is_single()) { wp_title(); }?>
     </title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php bloginfo('template_directory') ?>/js/simple.js" type="text/javascript" charset="utf-8"></script>
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name') ?> » RSS2" href="<?php bloginfo('rss2_url') ?>">
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name') ?> » Atom" href="<?php bloginfo('atom_url') ?>">
     <!--[if lt IE 9]>
@@ -25,14 +27,20 @@
           <a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a>
         <?php endif; ?>
           <a href="<?php bloginfo('rss2_url') ?>" class="meta">
-            <img class="rss_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" width="30px" height="30px" />
+            <img id="rss_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" width="30px" height="30px" />
+            <img id="rss_default_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" width="30px" height="30px" style="display:none;"/>
+            <img id="rss_hover_icon" src="<?php bloginfo('template_directory') ?>/images/rss_hover.png" width="30px" height="30px" style="display:none;"/>
           </a>
           <a href="http://twitter.com/miyapong" class="meta">
-            <img class="twitter_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" width="30px" height="30px" />
+            <img id="twitter_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" width="30px" height="30px" />
+            <img id="twitter_default_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" width="30px" height="30px" style="display:none;"/>
+            <img id="twitter_hover_icon" src="<?php bloginfo('template_directory') ?>/images/twitter_hover.png" width="30px" height="30px" style="display:none;"/>
           </a>
           <a href="http://www.facebook.com/miyapong" class="meta">
-            <img class="twitter_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" width="30px" height="30px" />
+            <img id="facebook_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" width="30px" height="30px" />
+            <img id="facebook_default_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" width="30px" height="30px" style="display:none;"/>
+            <img id="facebook_hover_icon" src="<?php bloginfo('template_directory') ?>/images/facebook_hover.png" width="30px" height="30px" style="display:none;"/>
           </a>
-        <p class="blog_description"><?php bloginfo('description'); ?></p>
+          <p class="blog_description"><?php bloginfo('description'); ?></p>
         <?php wp_nav_menu(array('container' => 'nav')); ?>
       </header><!-- /header -->

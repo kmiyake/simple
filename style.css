@@ -160,11 +160,14 @@ div#wrapper {
       #wrapper > header .meta {
         text-decoration: none;
         }
-      #wrapper > header .rss_icon,
-      #wrapper > header .twitter_icon,
-      #wrapper > header .facebook_icon {
+      #wrapper > header #rss_icon,
+      #wrapper > header #twitter_icon,
+      #wrapper > header #facebook_icon {
         position: relative;
         top: 7px;
+        }
+      #wrapper > header #rss_icon {
+        left: 2px;
         }
 
 /***********************
