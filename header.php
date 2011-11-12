@@ -7,7 +7,7 @@
       <?php if (is_single()) { wp_title(); }?>
     </title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php bloginfo('template_directory') ?>/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php bloginfo('template_directory') ?>/js/simple.js" type="text/javascript" charset="utf-8"></script>
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name') ?> » RSS2" href="<?php bloginfo('rss2_url') ?>">
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name') ?> » Atom" href="<?php bloginfo('atom_url') ?>">
