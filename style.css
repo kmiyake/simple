@@ -113,6 +113,9 @@ div#wrapper {
 #wrapper > header {
   margin: 15px 0;
   }
+  #wrapper h1 {
+    display: inline;
+    }
   #wrapper > header a.blog_title {
     color: #666;
     font-size: 1.8750em;
@@ -154,6 +157,15 @@ div#wrapper {
       color: #FFF;
       text-decoration: none;
       }
+      #wrapper > header .meta {
+        text-decoration: none;
+        }
+      #wrapper > header .rss_icon,
+      #wrapper > header .twitter_icon,
+      #wrapper > header .facebook_icon {
+        position: relative;
+        top: 7px;
+        }
 
 /***********************
  *
@@ -171,6 +183,9 @@ div#wrapper {
   #contents section.entry_info { 
     color: #888;
     font-size: 0.9em;
+    }
+  #contents section.entry_body {
+    padding: 0 5px;
     }
   #contents section.entry_tags { 
     color: #888;
