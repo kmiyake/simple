@@ -1,6 +1,4 @@
 <?php
-// ウィジェットエリア
-// サイドバーのウィジェット
 register_sidebar( array(
   'name' => __( 'Side Widget' ),
   'id' => 'side-widget',
@@ -10,7 +8,6 @@ register_sidebar( array(
   'after_title' => '</h3></header>',
 ) );
 
-// フッターエリアのウィジェット
 register_sidebar( array(
   'name' => __( 'Footer Widget' ),
   'id' => 'footer-widget',
@@ -20,12 +17,9 @@ register_sidebar( array(
   'after_title' => '</h3></header>',
 ) );
 
-// アイキャッチ画像
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size(220, 165, true ); // 幅 220px、高さ 165px、切り抜きモード
+set_post_thumbnail_size(220, 165, true );
 
-// カスタムナビゲーションメニュー
 add_theme_support('menus');
 
 ?>
-
