@@ -27,19 +27,19 @@
           <a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a>
         <?php endif; ?>
           <a href="<?php bloginfo('rss2_url') ?>" class="meta">
-            <img id="rss_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" width="30px" height="30px" />
-            <img id="rss_default_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" width="30px" height="30px" style="display:none;"/>
-            <img id="rss_hover_icon" src="<?php bloginfo('template_directory') ?>/images/rss_hover.png" width="30px" height="30px" style="display:none;"/>
+            <img id="rss_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" />
+            <img id="rss_default_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" style="display:none;"/>
+            <img id="rss_hover_icon" src="<?php bloginfo('template_directory') ?>/images/rss_hover.png" style="display:none;"/>
           </a>
           <a href="http://twitter.com/miyapong" class="meta">
-            <img id="twitter_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" width="30px" height="30px" />
-            <img id="twitter_default_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" width="30px" height="30px" style="display:none;"/>
-            <img id="twitter_hover_icon" src="<?php bloginfo('template_directory') ?>/images/twitter_hover.png" width="30px" height="30px" style="display:none;"/>
+            <img id="twitter_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" />
+            <img id="twitter_default_icon" src="<?php bloginfo('template_directory') ?>/images/twitter.png" style="display:none;"/>
+            <img id="twitter_hover_icon" src="<?php bloginfo('template_directory') ?>/images/twitter_hover.png" style="display:none;"/>
           </a>
           <a href="http://www.facebook.com/miyapong" class="meta">
-            <img id="facebook_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" width="30px" height="30px" />
-            <img id="facebook_default_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" width="30px" height="30px" style="display:none;"/>
-            <img id="facebook_hover_icon" src="<?php bloginfo('template_directory') ?>/images/facebook_hover.png" width="30px" height="30px" style="display:none;"/>
+            <img id="facebook_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" />
+            <img id="facebook_default_icon" src="<?php bloginfo('template_directory') ?>/images/facebook.png" style="display:none;"/>
+            <img id="facebook_hover_icon" src="<?php bloginfo('template_directory') ?>/images/facebook_hover.png" style="display:none;"/>
           </a>
           <p class="blog_description"><?php bloginfo('description'); ?></p>
         <?php wp_nav_menu(array('container' => 'nav')); ?>
