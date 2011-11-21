@@ -22,4 +22,5 @@ set_post_thumbnail_size(220, 165, true );
 
 add_theme_support('menus');
 
+require_once ( get_template_directory() . '/theme-options.php' )
 ?>
