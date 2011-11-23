@@ -66,7 +66,8 @@ body {
   line-height: 1.8;
 }
 h2 { font-size: 1.5em; font-weight: bold; }
-h3 { font-size: 1.1em; font-weight: bold; }
+h3 { font-size: 1.25em; font-weight: bold; }
+h4 { font-size: 1.1em; font-weight: bold; }
 a {
   color: #08C;
   text-decoration: none;
@@ -195,9 +196,13 @@ div#wrapper {
     font-size: 0.9em;
     }
     #contents section.entry_body h3 {
-      border-left: 6px solid #EEE;
+      border-left: 6px solid #ff6600;
       margin-top: 20px;
       padding-left: 8px;
+      }
+    #contents section.entry_body h4 {
+      border-bottom: 3px dashed #EEE;
+      margin-top: 10px;
       }
     #contents section.entry_body ol {
       list-style-type: decimal;
