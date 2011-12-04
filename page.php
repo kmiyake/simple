@@ -4,9 +4,9 @@
         <?php while (have_posts()) : the_post(); ?>
           <article>
             <header>
-              <h2>
+              <h1>
                 <a href="<?php the_permalink(); ?>" class="entry_title"><?php the_title(); ?></a>
-              </h2>
+              </h1>
             </header>
             <section class="entry_body">
               <?php the_content('more...'); ?>
