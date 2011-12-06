@@ -19,13 +19,13 @@
   </head>
   <body>
     <div id="wrapper">
-      <header>
+      <header id="page_header">
         <?php if (is_home()) : ?>
           <h1>
-            <a href="<?php bloginfo('url'); ?>" class="logo"><?php bloginfo('name'); ?></a>
+            <span id="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></span>
           </h1>
         <?php else : ?>
-          <a href="<?php bloginfo('url'); ?>" class="logo"><?php bloginfo('name'); ?></a>
+          <span id="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></span>
         <?php endif; ?>
         <a href="<?php bloginfo('rss2_url') ?>" class="meta">
           <img id="rss_icon" src="<?php bloginfo('template_directory') ?>/images/rss.png" />

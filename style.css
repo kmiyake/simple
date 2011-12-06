@@ -65,9 +65,9 @@ body {
   font-size: 14px;
   line-height: 1.8;
 }
-h2 { font-size: 1.5em; font-weight: bold; }
-h3 { font-size: 1.25em; font-weight: bold; }
-h4 { font-size: 1.1em; font-weight: bold; }
+h2 { font-size: 2em; font-weight: bold; }
+h3 { font-size: 1.875em; font-weight: bold; }
+h4 { font-size: 1.5em; font-weight: bold; }
 a {
   color: #08C;
   text-decoration: none;
@@ -111,58 +111,59 @@ div#wrapper {
  * 3.Header
  * 
  ***********************/
-header {
-  margin: 15px 0;
+header#page_header {
   }
-  header h1 {
+  header#page_header h1 {
     display: inline;
     }
-  header a.logo {
+  header#page_header #logo a {
     color: #666;
-    font-size: 1.8750em;
+    font-size: 3em;
     font-weight: bold;
+    margin-left: 15px;
+    text-shadow: 1px 1px 2px #AAA;
     }
-  header a.logo:hover {
+  header#page_header #logo a:hover {
     color: #333;
     }
-  header p.description {
+  header#page_header p.description {
     margin-left: 15px;
     }
-  header nav:after {
+  header#page_header nav:after {
     content: ""; 
     clear: both;
     display: block; 
     }
-  header nav ul li {
+  header#page_header nav ul li {
     border-top: 1px solid #EEE;
     border-left: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
     float: left;
     }
-  header nav ul li:last-child {
+  header#page_header nav ul li:last-child {
     border-right: 1px solid #EEE;
     }
-  header nav ul li a {
+  header#page_header nav ul li a {
     background-color: #F8F8F8;
     display: block;
     font-weight: bold;
     padding: 10px 30px;
     }
-    header nav ul li a:hover {
+    header#page_header nav ul li a:hover {
       background-color: #08C;
       color: #FFF;
       text-decoration: none;
       }
-  header .meta {
+  header#page_header .meta {
     text-decoration: none;
     }
-  header #rss_icon,
-  header #twitter_icon,
-  header #facebook_icon {
+  header#page_header #rss_icon,
+  header#page_header #twitter_icon,
+  header#page_header #facebook_icon {
     position: relative;
     top: 7px;
     }
-  header #rss_icon {
+  header#page_header #rss_icon {
     left: 2px;
     }
 
@@ -171,52 +172,55 @@ header {
  * 4.Contents
  * 
  ***********************/
-#contents {
+section#contents {
   float: left;
   width: 700px;
+  margin-left: 15px;
   }
-  #contents a.entry_title {
-    color: #333;
-    text-shadow: 1px 1px 2px #AAA;
+  section#contents article {
+    padding: 10px 0;
     }
-  #contents section.entry_info { 
-    color: #888;
-    font-size: 0.9em;
+  section#contents h3 {
+    border-left: 6px solid #FF6600;
+    margin-top: 20px;
+    padding-left: 8px;
     }
-  #contents section.entry_body {
-    padding: 0 5px;
+  section#contents h4 {
+    margin-top: 10px;
+    padding-left: 14px;
     }
-    #contents section.entry_body h3 {
-      border-left: 6px solid #FF6600;
-      margin-top: 20px;
-      padding-left: 8px;
-      }
-    #contents section.entry_body h4 {
-      border-bottom: 3px dashed #EEE;
-      margin-top: 10px;
-      }
-    #contents section.entry_body ol {
-      list-style-type: decimal;
-      margin-left: 15px;
-      }
-  #contents section.entry_tags { 
-    color: #888;
-    font-size: 0.9em;
+  section#contents ol {
+    list-style-type: decimal;
+    margin-left: 15px;
     }
-  #contents .nav-below {
-    text-align: center;
-    }
-  #contents img {
+  section#contents img {
     border: solid 3px #EEE;
     margin: 10px 20px;
     }
+  section#contents .entry_title a {
+    color: #333;
+    text-shadow: 1px 1px 2px #AAA;
+    }
+  section#contents .meta { 
+    color: #888;
+    font-size: 0.9em;
+    }
+  section#contents .entry_tags { 
+    color: #888;
+    font-size: 0.9em;
+    }
+  section#contents .nav-below {
+    text-align: center;
+    }
       
-/*
+/***********************
+ * 
  * 5.Sidebar
- */
+ *
+ ***********************/
 #side {
   float: right;
-  width: 370px;
+  width: 350px;
   }
   .widget-area header h3 {
     border-right: 7px solid #66CCFF;
@@ -236,11 +240,13 @@ header {
       width: 30px;
     }
 
-/*
+/***********************
+ * 
  * 6.Footer
- */
-#wrapper > footer {
+ *
+ ***********************/
+footer#page_footer{
   }
-  #wrapper > footer div.blog_footer {
+  footer#page_footer .copyright {
     text-align: center;
     }
